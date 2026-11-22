@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="跨境电商经营巡检、店铺状态、库存、成本、广告及审批事项统一看板">
+  <title>丙火跨境运营台｜每日巡检</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">丙</div>
+        <div><strong>丙火跨境运营台</strong><span>每日经营巡检中心</span></div>
+      </div>
+      <nav aria-label="主要导航">
+        <button class="nav-item active" data-view="overview"><span>◫</span> 今日总览</button>
+        <button class="nav-item" data-view="accounts"><span>◎</span> 账号与申诉 <b>3</b></button>
+        <button class="nav-item" data-view="ads"><span>↗</span> Amazon广告 <b>8</b></button>
+        <button class="nav-item" data-view="walmart-ads"><span>↗</span> Walmart广告 <b>四店已读</b></button>
+        <button class="nav-item" data-view="inventory"><span>▦</span> FBA库存 <b>5</b></button>
+        <button class="nav-item" data-view="cost"><span>¥</span> 成本补录 <b>454</b></button>
+        <button class="nav-item" data-view="team"><span>◇</span> AI团队汇报 <b>10</b></button>
+        <button class="nav-item" data-view="approvals"><span>✓</span> 待我审批 <b>3</b></button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="pulse"></span>
+        <div><strong>每日 09:30 巡检</strong><small>只读检查与草稿可自动完成<br>经营动作统一等待审批</small></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">DAILY OPERATIONS REVIEW</p>
+          <h1 id="page-title">今日经营总览</h1>
+        </div>
+        <div class="top-actions">
+          <div class="date-chip"><span>资料更新</span><strong>2026-11-22 17:44</strong><small>各模块见数据日期</small></div>
+          <button class="icon-btn" id="theme-toggle" aria-label="切换显示模式">◐</button>
+        </div>
+      </header>
+
+      <section class="view active" id="overview">
+        <div class="status-banner critical">
+          <div class="status-icon">!</div>
+          <div><strong>今天有 3 项账号级事项需要优先关注</strong><p>Cui-WJ、zhuja 广告付款失败；JUEFAN 账号被封且正在申诉。</p></div>
+          <button data-jump="accounts">查看账号状态 →</button>
+        </div>
+        <div class="callout"><strong>巡检证据状态</strong><span>11月20日已汇总10名员工圆桌结论；11月22日领星专用Chrome已连接并回读Walmart四店SP，报表更新至美国西部时间11月20日。Amazon广告与FBA仍沿用11月17日快照；账号通知、Case与申诉期限待回读。</span></div>
+
+        <div class="metric-grid">
+          <article class="metric"><span>Amazon美国站广告花费</span><strong>$2,892.43</strong><small class="down">↓ 32.39% 对比前期</small></article>
+          <article class="metric"><span>Amazon广告销售额</span><strong>$5,890.56</strong><small class="down">↓ 33.67% 对比前期</small></article>
+          <article class="metric"><span>Amazon综合 ACOS</span><strong>49.10%</strong><small class="warn">较前期恶化 0.92pp</small></article>
+          <article class="metric"><span>FBA 可售库存</span><strong>2,791</strong><small>5店有效 · JUEFAN未知</small></article>
+          <article class="metric"><span>365天以上库存</span><strong>765</strong><small class="warn">现金回收优先池</small></article>
+          <article class="metric"><span>缺成本记录</span><strong>454</strong><small class="warn">占全部记录 59.3%</small></article>
+        </div>
+
+        <div class="two-col">
+          <article class="panel priorities">
+            <div class="panel-head"><div><p class="eyebrow">TOP 5</p><h2>今日最重要事项</h2></div><span class="tag red">需决策</span></div>
+            <ol>
+              <li><span class="priority p0">P0</span><div><strong>Cui-WJ、zhuja 广告付款失败</strong><p>11月17日状态；欠款金额及失败原因待平台回读，付款或换卡由老板决定。</p></div></li>
+              <li><span class="priority p0">P0</span><div><strong>JUEFAN 封号申诉中</strong><p>原始通知、Case、平台回复与截止日期尚未取得；库存无返回视为未知。</p></div></li>
+              <li><span class="priority p1">P1</span><div><strong>huangchao ACOS 85.60%</strong><p>2个在投无销售活动、1个超预算高ACOS活动待处理。</p></div></li>
+              <li><span class="priority p1">P1</span><div><strong>Walmart fpl 95点击无归因订单</strong><p>11月15–22日筛选、报表更新至11月20日；两条开启的SP活动共花费 $21.63，先核商品与归因，再形成调整草案。</p></div></li>
+              <li><span class="priority p2">P2</span><div><strong>765件超365天库存</strong><p>11月17日快照；其中272件缺成本，先补证并核销量、退款和结算。</p></div></li>
+            </ol>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head"><div><p class="eyebrow">STORE HEALTH</p><h2>六店状态</h2></div><span class="tag">美国站</span></div>
+            <div class="store-list">
+              <div><span class="dot good"></span><strong>yiling</strong><em>ACOS 35.31%</em><small>主力贡献</small></div>
+              <div><span class="dot bad"></span><strong>huangchao</strong><em>ACOS 85.60%</em><small>效率异常</small></div>
+              <div><span class="dot bad"></span><strong>bin-yicheng</strong><em>ACOS 77.32%</em><small>效率异常</small></div>
+              <div><span class="dot critical-dot"></span><strong>Cui-WJ</strong><em>ACOS 101.19%</em><small>付款失败</small></div>
+              <div><span class="dot critical-dot"></span><strong>zhuja</strong><em>无消耗</em><small>付款失败</small></div>
+              <div><span class="dot critical-dot"></span><strong>JUEFAN</strong><em>历史 26.83%</em><small>封号申诉中</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="accounts">
+        <div class="section-intro"><h2>账号健康与申诉</h2><p>状态线索截至11月17日；原始通知、欠款原因、Case和申诉截止尚待回读。正式付款、提交申诉或恢复动作均需审批。</p></div>
+        <div class="account-grid">
+          <article class="account-card danger"><div><span>付款故障</span><strong>Cui-WJ-US</strong></div><b>广告账号付款失败</b><p>可见100个广告活动均受影响。近30天花费 $262.65，ACOS 101.19%。</p><footer><span>下一步：核对欠款与支付方式</span><em>待审批</em></footer></article>
+          <article class="account-card danger"><div><span>付款故障</span><strong>zhuja-US</strong></div><b>广告账号付款失败</b><p>近30天无广告消耗，活动以暂停/归档为主。</p><footer><span>下一步：核对账单状态</span><em>待审批</em></footer></article>
+          <article class="account-card appeal"><div><span>申诉中</span><strong>JUEFAN-US-US</strong></div><b>账号被封</b><p>领星FBA库存授权异常；广告数据仅作封号前历史参考。</p><footer><span>下一步：跟踪期限与材料</span><em>每日观察</em></footer></article>
+        </div>
+      </section>
+
+      <section class="view" id="ads">
+        <div class="section-intro"><h2>Amazon广告巡检</h2><p>数据区间：2026-10-18 至 2026-11-16。成本未补全前，ACOS仅用于筛查，不等于真实利润。</p></div>
+        <div class="table-wrap"><table><thead><tr><th>店铺</th><th>花费</th><th>广告销售</th><th>ACOS</th><th>订单</th><th>判断</th></tr></thead><tbody>
+          <tr><td>yiling-usa-US</td><td>$1,339.26</td><td>$3,792.64</td><td><span class="pill amber">35.31%</span></td><td>173</td><td>主力店，2个主要在投无销售</td></tr>
+          <tr><td>huangchao-usa-US</td><td>$850.58</td><td>$993.72</td><td><span class="pill red">85.60%</span></td><td>51</td><td>效率差，需止损复核</td></tr>
+          <tr><td>bin-yicheng-usa-US</td><td>$326.71</td><td>$422.56</td><td><span class="pill red">77.32%</span></td><td>22</td><td>多项在投无销售</td></tr>
+          <tr><td>Cui-WJ-US</td><td>$262.65</td><td>$259.55</td><td><span class="pill red">101.19%</span></td><td>11</td><td>付款失败，先处理账号</td></tr>
+          <tr><td>JUEFAN-US-US</td><td>$113.23</td><td>$422.09</td><td><span class="pill muted">26.83%</span></td><td>13</td><td>封号前历史数据</td></tr>
+          <tr><td>zhuja-US</td><td>$0</td><td>$0</td><td><span class="pill muted">0%</span></td><td>0</td><td>付款失败，无消耗</td></tr>
+        </tbody></table></div>
+        <div class="callout"><strong>已完成</strong><span>六店近30天广告总览与活动明细读取，未修改预算、竞价、关键词或状态。</span></div>
+      </section>
+
+      <section class="view" id="walmart-ads">
+        <div class="section-intro"><h2>Walmart广告巡检与调优</h2><p>11月22日已连接领星并逐店读取四个美国站 SP 广告：linsen、fpl、lam、tfq。筛选期为11月15–22日，报表更新到美国西部时间11月20日；21–22日尚不能视为完整数据。领星店铺名与老板简称的映射仍待 Advertiser ID 最终核验。</p></div>
+        <div class="metric-grid compact"><article class="metric"><span>报表更新至</span><strong>11-20</strong><small>美国西部时间</small></article><article class="metric"><span>四店SP花费</span><strong>$105.60</strong><small>393点击</small></article><article class="metric"><span>四店归因销售</span><strong>$168.63</strong><small>8单</small></article><article class="metric"><span>四店合计 ACOS</span><strong>62.62%</strong><small>尚未扣成本</small></article></div>
+        <div class="two-col">
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">PRIORITY</p><h2>先查无单花费</h2></div><span class="tag">待诊断</span></div><p>fpl 两条开启的花费活动合计 $21.63、95点击、0单；lam 的“毛绒-alien plush-auto”花费 $15.83、61点击、0单。fpl搜索词页与活动页汇总不一致，须先核口径及商品状态，再形成暂停、否词或竞价草案。</p></article>
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">NEXT CHECK</p><h2>领星调优入口</h2></div><span class="tag">已连接</span></div><p><a href="https://ads.lingxing.com/walmart/ad/sp" target="_blank" rel="noopener noreferrer">打开领星沃尔玛SP广告</a>。11月22日已按老板指示执行广泛投放；次日核活动是否从 planned 转 live、展示/点击/花费及零订单搜索词，再联表商品毛利。新增活动不等于已产生展示。</p></article>
+        </div>
+        <div class="table-wrap"><table><thead><tr><th>店铺简称</th><th>领星SP店铺项</th><th>花费</th><th>点击</th><th>订单</th><th>归因销售</th><th>ACOS</th><th>当前观察</th></tr></thead><tbody><tr><td>linsen</td><td>6.linsen-wal-417134</td><td>$16.58</td><td>64</td><td>1</td><td>$18.03</td><td><span class="pill red">91.96%</span></td><td>需核利润与无单活动</td></tr><tr><td>fpl</td><td>5.fpola-wal-377668</td><td>$21.63</td><td>95</td><td>0</td><td>$0</td><td>无销售，比例无意义</td><td>两条花费活动均0单</td></tr><tr><td>lam</td><td>3.lama-wal-377030</td><td>$36.35</td><td>131</td><td>2</td><td>$60.66</td><td>59.92%</td><td>一条活动61点击0单</td></tr><tr><td>tfq</td><td>2.tfqing-wal-377196</td><td>$31.04</td><td>103</td><td>5</td><td>$89.94</td><td>34.51%</td><td>核成本后判断收益</td></tr></tbody></table></div>
+        <div class="panel"><div class="panel-head"><div><p class="eyebrow">WFS CLEARANCE</p><h2>lamacun 挡把卫衣套：广泛测试待生效</h2></div><span class="tag red">309件可售</span></div><p>老板已确认，所说的 lamacun“卫衣”就是这三款汽车挡把卫衣套：Black/White 132、Pink/Orange 35、Red/Blue 142，WFS 页日销量均为0、售价均为 $8.92。目录页显示合计688件，与 WFS 可售口径相差379件，清货以 WFS 的309件为准。Seller Center 当前登录名为 jianjun；商品指代已确认，店铺名称映射仍待单独核验。</p><p>已有自动活动 <strong>auto-knob hoodie 6.09</strong> 覆盖这三款，报表截至11月20日均为0展示、0花费；11月22日另建一条三款合并的手动广泛活动 <strong>lam-WFS-car-shift-hoodie-broad-20261122</strong>，动态竞价、三个词各 $0.30 基础出价、日预算 $10，领星状态为 planned。需复查审核/资格、Buy Box、账单及新旧活动合计花费，若仍零展示先修资格。</p><p>按沃尔玛公开费表，若属汽车类且计费重量不超过1磅，现价 $8.92 扣最低 WFS 履约费、低价附加费及12%佣金后，最多约剩 $3.40/件，尚未扣进货、头程、仓储及广告。促销底价待实际成本与结算确认，尚未改价。</p></div>
+        <div class="callout"><strong>本轮广告执行</strong><span>已创建4条手动广泛活动：linsen鹦鹉毛绒2款、linsen WFS庭院摆件3款（库存23/22/17）、fpl圣诞侏儒3款、lam挡把卫衣套3款；每活动 $10/日，动态竞价，关键词基础出价 $0.30，目前均为 planned。tfq原有圣诞袜广泛活动补入6款，商品数56→62，状态 live，仍为原活动 $10/日；lam原有木质挡把广泛活动补入1款WFS商品，7→8，状态 live，原活动为固定竞价 $10/日。fpl原有WFS庭院侏儒广泛活动已重新开启，位置加价调至0%，目前 planned。tfq WFS 库存页本次回读有5款共27件可售（此前“无正数”结论已更正），其中橙色风车16件已在原广泛活动，其余库存仅1–4件需防断货。价格未改。</span></div>
+        <div class="panel"><div class="panel-head"><div><p class="eyebrow">OTHER WFS STORES</p><h2>leyu 与 zhuja：老库存先核在售和付款</h2></div><span class="tag red">272件超12个月</span></div><p>领星「平台仓→WFS库存」同步时间 11月22日16:53：<strong>leyu</strong> 8条记录、6款可售合计187件，其中183件库龄超12个月；黑猫南瓜毛毯104件均超12个月。该商品已在原活动「万圣节毛毯-广泛 0.5 动态」，但活动暂停，日预算$10、总预算$50；本筛选期77展示、0点击，未直接重启。另有57件显示商品状态为「-」，需核实是否仍可售。</p><p><strong>zhuja</strong> 33条记录、7款可售合计94件，其中89件库龄超12个月；46件商品状态为「-」。当前SP筛选期0花费、0点击；老板此前反馈广告付款失败，当前账单状态尚未由店铺后台复核，因此未新增投放。其余已显示在售的庭院狗10件、兔11件、海龟8件、侏儒19件可作为付款修复后的候选。两店本次只读领星同步数据；leyu无已打开的独立店铺浏览器，zhuja浏览器停在登录页，待Seller Center回核库存、上架与账单。</p></div>
+      </section>
+
+      <section class="view" id="inventory">
+        <div class="section-intro"><h2>FBA库存与现金回收</h2><p>11月17日FBA快照：5个有效店铺，共766条记录。11月22日未取得新库存；JUEFAN仍未知。</p></div>
+        <div class="metric-grid compact"><article class="metric"><span>总库存</span><strong>2,864</strong></article><article class="metric"><span>可售</span><strong>2,791</strong></article><article class="metric"><span>调仓中</span><strong>32</strong></article><article class="metric"><span>冗余记录</span><strong>125</strong></article><article class="metric"><span>365天以上</span><strong>765</strong></article><article class="metric"><span>不可售</span><strong>2</strong></article></div>
+        <div class="table-wrap"><table><thead><tr><th>店铺</th><th>FBA总库存</th><th>可售</th><th>冗余记录</th><th>365天以上</th><th>缺成本记录</th></tr></thead><tbody>
+          <tr><td>yiling</td><td>1,345</td><td>1,302</td><td>8</td><td>68</td><td>19</td></tr><tr><td>zhuja</td><td>547</td><td>541</td><td>17</td><td>242</td><td>109</td></tr><tr><td>bin-yicheng</td><td>391</td><td>387</td><td>18</td><td>212</td><td>32</td></tr><tr><td>Cui-WJ</td><td>315</td><td>306</td><td>47</td><td>118</td><td>139</td></tr><tr><td>huangchao</td><td>266</td><td>255</td><td>35</td><td>125</td><td>155</td></tr><tr class="muted-row"><td>JUEFAN</td><td colspan="5">账号被封、库存授权异常，数据未知</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section class="view" id="cost">
+        <div class="section-intro"><h2>成本补录进度</h2><p>未知成本不填0，不按售价或相似商品倒推；冲突记录保持隔离。</p></div>
+        <div class="progress-panel"><div class="ring" style="--p:40.7"><div><strong>40.7%</strong><span>已有成本</span></div></div><div class="progress-copy"><h3>454 / 766 条仍缺采购成本</h3><p>11月17日FBA快照；SKU建档与配对说明称已提交492个本地SKU、377行ASIN配对，但执行日志缺审批和逐条回读证据。剩余缺口须从采购、付款或供应商记录补证。</p><div class="legend"><span><i class="blue"></i>已有成本 312</span><span><i class="orange"></i>无美国站成本 393</span><span><i class="red"></i>其他待复核 61</span></div></div></div>
+        <div class="table-wrap"><table><thead><tr><th>原因</th><th>记录数</th><th>库存件数</th><th>365天以上</th><th>处理原则</th></tr></thead><tbody><tr><td>全卖通无美国站成本</td><td>393</td><td>505</td><td>272</td><td>从采购/付款/供应商记录补证</td></tr><tr><td>待审批冲突</td><td>14</td><td>163</td><td>0</td><td>确认商品身份及默认成本</td></tr><tr><td>单一CNY成本待复核</td><td>36</td><td>31</td><td>28</td><td>复核店铺、SKU语义和有效期</td></tr><tr><td>多采购成本冲突</td><td>7</td><td>0</td><td>0</td><td>不自动选择最新或最低值</td></tr><tr><td>非CNY或零成本</td><td>4</td><td>23</td><td>23</td><td>确认币种与实际采购成本</td></tr></tbody></table></div>
+      </section>
+
+      <section class="view" id="team">
+        <div class="section-intro"><h2>10名AI员工最新汇报</h2><p>最近完整汇报为11月20日圆桌；以下“最近”指已核实的岗位结论，不代表11月22日已进入后台。</p></div>
+        <div class="team-grid">
+          <article class="team-card"><header><span>01</span><div><strong>经营数据与利润审计员</strong><small>全店数据中枢</small></div><em class="state working">工作中</em></header><p><b>能做：</b>利润审计、异常排序、跨店经营汇总。</p><p><b>最近：</b>前50高现金SKU利润联表仍缺销量、退款、结算和完整成本桥；11月25日前补齐。</p><footer>对接：全部Amazon美国站</footer></article>
+          <article class="team-card"><header><span>02</span><div><strong>跨平台广告经理</strong><small>Amazon与Walmart广告</small></div><em class="state working">已连接</em></header><p><b>能做：</b>两平台ACOS/ROAS、搜索词、竞价预算和否词草稿。</p><p><b>最近：</b>11月22日领星已回读Walmart四店SP；fpl 95点击0单，lam一条活动61点击0单，待商品与利润联表。</p><footer>对接：6个Amazon美国站；Walmart四店已读SP，广告ID待核</footer></article>
+          <article class="team-card"><header><span>03</span><div><strong>库存与现金回收经理</strong><small>FBA库存与回款</small></div><em class="state working">工作中</em></header><p><b>能做：</b>库龄、冗余、缺货风险和清货测算。</p><p><b>最近：</b>11月20日复核765件超365天库存，其中272件缺采购成本；缺货候选不可直接补货。</p><footer>对接：5店有效，JUEFAN异常</footer></article>
+          <article class="team-card"><header><span>04</span><div><strong>Listing与合规经理</strong><small>内容与证据链</small></div><em class="state alert">合规复核</em></header><p><b>能做：</b>Listing草稿、合规检查、字段与证据核验。</p><p><b>最近：</b>11月19日9条Walmart本地草稿分流：1条普通复核，8条IP专项复核；无后台发布回执。</p><footer>对接：Walmart草稿与Amazon Listing</footer></article>
+          <article class="team-card"><header><span>05</span><div><strong>Walmart与履约经理</strong><small>刊登与订单履约</small></div><em class="state wait">待接入</em></header><p><b>能做：</b>Listing、定价、订单、履约绩效和异常台账。</p><p><b>最近：</b>订单与Case缺实时回读；9条本地草稿不代表后台已保存或发布。</p><footer>对接：linsen、fpl、lam、tfq；后台映射待核验</footer></article>
+          <article class="team-card"><header><span>06</span><div><strong>跨平台客服经理</strong><small>消息与售后</small></div><em class="state wait">待接入</em></header><p><b>能做：</b>消息分类、回复草稿、退款争议证据整理。</p><p><b>最近：</b>11月20日仍缺当前消息、退款争议和开放Case清单，状态保持未知。</p><footer>对接：Amazon、Walmart</footer></article>
+          <article class="team-card"><header><span>07</span><div><strong>跨境物流经理</strong><small>交运与追踪</small></div><em class="state wait">待接入</em></header><p><b>能做：</b>物流渠道、追踪号、迟发和费用异常诊断。</p><p><b>最近：</b>未发货、承诺截止和最新追踪仍缺入口；11月24日前形成脱敏异常清单。</p><footer>对接：马帮、FBA/FBM</footer></article>
+          <article class="team-card"><header><span>08</span><div><strong>采购与供应链经理</strong><small>询价与补货测算</small></div><em class="state wait">冻结采购</em></header><p><b>能做：</b>供应商询价、MOQ/交期对比、采购草稿。</p><p><b>最近：</b>30条低库存和575条零库存记录都不能直接转补货；需求和利润证据未齐。</p><footer>对接：1688与供应商资料</footer></article>
+          <article class="team-card"><header><span>09</span><div><strong>账号健康与申诉经理</strong><small>账号安全第一</small></div><em class="state alert">P0</em></header><p><b>能做：</b>期限跟踪、证据目录、POA与申诉材料草稿。</p><p><b>最近：</b>三店事实包待原始通知、账单/Case、回复和截止；11月23日18:00复核。</p><footer>对接：JUEFAN、Cui-WJ、zhuja</footer></article>
+          <article class="team-card"><header><span>10</span><div><strong>选品与市场研究员</strong><small>机会与风险验证</small></div><em class="state wait">待证据</em></header><p><b>能做：</b>竞品、关键词、市场容量和新品验证。</p><p><b>最近：</b>15款候选尚无一款通过九类证据闸门；11月25日前完成矩阵。</p><footer>对接：Amazon/Walmart候选池</footer></article>
+        </div>
+      </section>
+
+      <section class="view" id="approvals">
+        <div class="section-intro"><h2>合并审批清单</h2><p>11月20日圆桌合并事项。先取得原始事实与旧值，再由老板决定；所有外部动作当前均未执行。</p></div>
+        <div class="approval-list">
+          <article><span class="approval-id">01</span><div><strong>两个广告账号账单故障</strong><p>Cui-WJ、zhuja：先核欠款金额、付款失败原因和限制，再决定是否补缴或换支付方式。</p></div><em class="risk high">账号安全</em><button>待事实包</button></article>
+          <article><span class="approval-id">02</span><div><strong>登录验证和权限</strong><p>只读账号、申诉、客服或履约入口如需OTP/验证码，由老板本人处理；JUEFAN正式补件或申诉提交另行审批。</p></div><em class="risk high">本人配合</em><button>待入口</button></article>
+          <article><span class="approval-id">03</span><div><strong>成本核算口径与冲突记录</strong><p>确认前50 SKU成本口径与采购凭证只读取证范围；15个冲突ASIN隔离，不自动选成本或导入。</p></div><em class="risk medium">利润</em><button>待确认</button></article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
